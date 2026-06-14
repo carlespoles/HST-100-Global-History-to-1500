@@ -9,11 +9,11 @@
   <style>
     html, body { margin: 0; padding: 0; height: 100%; background: #14233A; }
     #mapdiv { width: 100%; height: 100vh; }
-    #loaderr { color:#F7F2E8; font-family: Georgia, serif; padding: 2rem; }
   </style>
 </head>
 <body>
-  <div id="mapdiv"><p id="loaderr">Loading the map…</p></div>
+  <div id="mapdiv"></div>
+  <div id="loaderr"></div>
 
   <script src="assets/storymapjs/js/storymap-min.js"></script>
   <script>
@@ -104,7 +104,9 @@
     (function () {
       var Ctor = (window.KLStoryMap && KLStoryMap.StoryMap) || (window.VCO && VCO.StoryMap);
       if (!Ctor) {
-        document.getElementById("loaderr").textContent =
+        var e = document.getElementById("loaderr");
+        e.style.cssText = "color:#F7F2E8;font-family:Georgia,serif;padding:2rem;";
+        e.textContent =
           "The StoryMap library did not load. Make sure the assets/storymapjs folder is present and that you are viewing this over http(s) (e.g. GitHub Pages), not from a local file path.";
         return;
       }
