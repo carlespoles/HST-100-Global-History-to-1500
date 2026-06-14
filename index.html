@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The World Ibn Battuta Saw — HST 100</title>
+  <!-- StoryMapJS library, vendored locally (CDN 'latest' is unreliable) -->
+  <link rel="stylesheet" href="assets/storymapjs/css/storymap.css">
+  <style>
+    html, body { margin: 0; padding: 0; height: 100%; background: #14233A; }
+    #mapdiv { width: 100%; height: 100vh; }
+    #loaderr { color:#F7F2E8; font-family: Georgia, serif; padding: 2rem; }
+  </style>
+</head>
+<body>
+  <div id="mapdiv"><p id="loaderr">Loading the map…</p></div>
+
+  <script src="assets/storymapjs/js/storymap-min.js"></script>
+  <script>
+    var storymap_data = {
+      width: 1280,
+      height: 720,
+      calculate_zoom: false,
+      storymap: {
+        language: "en",
+        map_type: "osm:standard",
+        map_as_image: false,
+        slides: [
+          {
+            type: "overview",
+            location: { lat: 28, lon: 55, zoom: 2 },
+            text: {
+              headline: "The World Ibn Battuta Saw",
+              text: "<p>Change and continuity from the Axial Age to the mid-fourteenth century — one Moroccan traveler across the Afro-Eurasian web, Tangier to China, 1325–1354.</p><p><strong>Thesis:</strong> more change than continuity. A single web bound by faith, law, and the Mongol peace — not by Rome or Han. Continuity survives at the two ancient anchors: Constantinople and China.</p><p style='font-size:0.85em;opacity:0.8;'>Carles Poles-Mielgo · HST 100, Module 5</p>"
+            },
+            media: { url: "images/route-map.png", caption: "Ibn Battuta's journey across the Afro-Eurasian web, 1325–1354." }
+          },
+          {
+            date: "1326",
+            location: { lat: 30.0444, lon: 31.2357, zoom: 4, line: true },
+            text: {
+              headline: "1 · Cairo, Egypt",
+              text: "<p><strong>Claim:</strong> Cairo and the Nile show the medieval shift of wealth and learning away from a shrunken Europe into the heart of dar al-Islam.</p><p><strong>Evidence:</strong> Battuta marvels that the Nile “excels all other rivers in the sweetness of its taste” (Battuta, “Egypt”), and counts Egypt's scholars among the greatest of the age.</p><p><strong>Reasoning:</strong> As Rome's Mediterranean order collapsed, Egypt became a populous, prosperous Islamic core. The western anchor of Battuta's world is now firmly Muslim — a decisive break from the Axial-Age balance.</p>"
+            },
+            media: { url: "images/cairo.png", caption: "Cairo — a great mosque of the Mamluk capital.", credit: "Illustration: C. Poles-Mielgo" }
+          },
+          {
+            date: "c. 1331",
+            location: { lat: -8.9579, lon: 39.5106, zoom: 4, line: true },
+            text: {
+              headline: "2 · Kilwa, East Africa",
+              text: "<p><strong>Claim:</strong> Kilwa shows how Indian Ocean commerce drew even the East African coast into the Muslim-dominated web.</p><p><strong>Evidence:</strong> He found a large town of devout Shafi‘i Muslims; “the greatest gift bestowed by the people of these countries is ivory” (Battuta, “Zanzibar”).</p><p><strong>Reasoning:</strong> Monsoon winds made the Indian Ocean a Muslim trading sea, linking Swahili city-states to Arabia, India, and China — a maritime web wholly beyond the reach of Rome or Han.</p>"
+            },
+            media: { url: "images/kilwa.png", caption: "Kilwa — an Indian Ocean dhow on the Swahili coast.", credit: "Illustration: C. Poles-Mielgo" }
+          },
+          {
+            date: "c. 1332",
+            location: { lat: 48.30, lon: 47.00, zoom: 4, line: true },
+            text: {
+              headline: "3 · The Golden Horde — Central Asian Steppe",
+              text: "<p><strong>Claim:</strong> Uzbeg Khan's court reveals an entirely new power — Islamized Mongol successor states ruling steppe the classical empires never controlled.</p><p><strong>Evidence:</strong> At the khan's travelling camp Battuta saw “a moving city, with its streets, mosques, and cooking-houses” (Battuta, “the Steppes”), and ranked Uzbeg among the seven great kings of the world.</p><p><strong>Reasoning:</strong> The Mongol conquests and the resulting peace reordered Eurasia. A Turkic-Mongol khan now rules as a devout Muslim, the steppe is safe to cross by wagon, and the Silk-Road world Rome and Han only brushed has become a governed, central node.</p>"
+            },
+            media: { url: "images/sarai.png", caption: "Sarai — the Golden Horde's mobile camp on the steppe.", credit: "Illustration: C. Poles-Mielgo" }
+          },
+          {
+            date: "c. 1332",
+            location: { lat: 41.0082, lon: 28.9784, zoom: 4, line: true },
+            text: {
+              headline: "4 · Constantinople — Byzantine Empire",
+              text: "<p><strong>Claim:</strong> Constantinople is the great marker of continuity — the living heir of Rome, still Christian on the eve of its fall.</p><p><strong>Evidence:</strong> At its border the khan's Byzantine wife resumed wine and pork and dropped the call to prayer: “Thus were the tastes changed by entering into the territories of infidelity” (Battuta, “Byzantium”). Hagia Sophia still stood as a great church.</p><p><strong>Reasoning:</strong> Here the Axial-Age world endures — a Roman successor state and Orthodox Christianity on the old Mediterranean. Yet Battuta enters only as escort to a Mongol khan's Byzantine wife: even surviving Rome now sits inside the world Islam and the Mongols reshaped.</p>"
+            },
+            media: { url: "images/constantinople.png", caption: "Constantinople — Hagia Sophia, heart of the Christian Roman heir.", credit: "Illustration: C. Poles-Mielgo" }
+          },
+          {
+            date: "qadi, 1334–1341",
+            location: { lat: 28.6139, lon: 77.2090, zoom: 4, line: true },
+            text: {
+              headline: "5 · Delhi — the Delhi Sultanate",
+              text: "<p><strong>Claim:</strong> Delhi shows a vast, cosmopolitan Islamic sultanate ruling Hindu India — and how the new web let a Moroccan rise to high office 5,000 miles from home.</p><p><strong>Evidence:</strong> Sultan Mohammed Tughluq — lavish yet terrifying — made Battuta royal judge of Delhi, but his wrath so emptied the capital that “the greatest city in the world had the fewest inhabitants” (Battuta, “India”).</p><p><strong>Reasoning:</strong> A shared faith, Arabic, and Islamic law let an educated Muslim hold the chief judgeship of a great Indian capital — impossible for any Roman or Han subject abroad. The Delhi Sultanate embodies India's shift from fragmentation to a cosmopolitan Muslim state over a Hindu majority.</p>"
+            },
+            media: { url: "images/delhi.png", caption: "Delhi — the Qutb Minar and a sultanate tomb.", credit: "Illustration: C. Poles-Mielgo" }
+          },
+          {
+            date: "c. 1345",
+            location: { lat: 30.2741, lon: 120.1551, zoom: 4, line: true },
+            text: {
+              headline: "6 · China — Hangzhou (Khansa) & the port of Zaitun",
+              text: "<p><strong>Claim:</strong> China is the eastern anchor — the Han-era core, still the richest land on earth, now ruled by a Mongol heir of Genghis Khan and woven into the same web as Cairo.</p><p><strong>Evidence:</strong> He calls Hangzhou “the largest city I had ever seen on the face of the earth” (Battuta, “China”), and reports paper money, fine porcelain, and a Muslim quarter with its own qadi in every Chinese town.</p><p><strong>Reasoning:</strong> The Han-era East Asian world-system endures — even more prosperous — but a Mongol heir of Genghis Khan now rules it. Indian-Ocean shipping and the Mongol peace linked China to Egypt in one continuous network, far beyond the loose Silk-Road threads of antiquity.</p>"
+            },
+            media: { url: "images/china.png", caption: "China — a pagoda at the eastern end of the web.", credit: "Illustration: C. Poles-Mielgo" }
+          },
+          {
+            location: { lat: 28, lon: 55, zoom: 2, line: true },
+            text: {
+              headline: "Conclusion — A world transformed",
+              text: "<p>From the Nile to the South China Sea, Battuta's travels measure how far the world had moved since Rome and Han. The change is decisive: one Afro-Eurasian web, held together by faith, law, and the Mongol peace rather than empire, reaching regions the classical powers never touched. The continuity is real but narrower — surviving above all at its two ancient anchors, Constantinople and China.</p><p style='font-size:0.85em;opacity:0.8;'>All quotations from <em>The Travels of Ibn Batuta, 1325–1354</em>, trans. Rev. Samuel Lee (1829). Historical context paraphrased from HST 100 Module 5 materials.</p>"
+            },
+            media: { url: "images/route-map.png", caption: "One traveler, one web — Morocco to China." }
+          }
+        ]
+      }
+    };
+
+    (function () {
+      var Ctor = (window.KLStoryMap && KLStoryMap.StoryMap) || (window.VCO && VCO.StoryMap);
+      if (!Ctor) {
+        document.getElementById("loaderr").textContent =
+          "The StoryMap library did not load. Make sure the assets/storymapjs folder is present and that you are viewing this over http(s) (e.g. GitHub Pages), not from a local file path.";
+        return;
+      }
+      var storymap = new Ctor("mapdiv", storymap_data, {});
+      window.onresize = function () { storymap.updateDisplay(); };
+    })();
+  </script>
+</body>
+</html>
